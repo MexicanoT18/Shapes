@@ -13,14 +13,11 @@ import java.util.Vector;
 public class Polygon extends Shape{
     private Vector<Point> P;
     Polygon(){
-        P.clear();
     }
     Polygon(String aName) {
         super(aName);
-        P.clear();
     }
     Polygon(Vector<Point> Q){
-        P.clear();
         for(int i=0; i<Q.size(); i++){
             P.addElement(Q.elementAt(i));
 	}

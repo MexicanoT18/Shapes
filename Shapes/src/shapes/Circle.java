@@ -25,7 +25,7 @@ public class Circle extends Shape{
     }
     Circle (Point _a, Point _b, Point _c){
 	Point u = new Point(_b.subtract(_a).y, -_b.subtract(_a).x);
-	Point v = new Point(_c.subtract(_a).y, -c.subtract(_a).x);
+	Point v = new Point(_c.subtract(_a).y, -_c.subtract(_a).x);
 	Point n = _c.subtract(_b).multiply(0.5);
 	double t = u.crossProduct(n)/v.crossProduct(u);
         c = _a.sum(_c).multiply(0.5).sum(v.multiply(t));
